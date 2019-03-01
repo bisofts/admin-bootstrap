@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css" />
+  <link rel="stylesheet" href="dist/css/sb-admin-2.css" />
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" />
+<link rel="stylesheet" href="bower_components/datatables-responsive/css/dataTables.responsive.css" />
+<link rel="stylesheet" href="owl-carousel/owl.carousel.css" />
+              <link rel="stylesheet" href="owl-carousel/owl.theme.css" />
+                  <link rel="stylesheet" href="pnotify/pnotify.custom.css" />
+</head>
+<body>
+    <div id="wrapper">
+         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">NHÀ NGHỈ NAM AN</a>
+                <a class="navbar-brand" href="index.html">Trang chủ</a>
+            </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="/Admin/Home/Account"><i class="fa fa-user fa-fw"></i> Chỉnh Sửa tài khoản</a>
+                        </li>
+                        <li>
+                            <a href="/Admin/Login/Logout"><i class="fa fa-sign-out fa-fw"></i> Đăng Xuất</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Thông Tin Phòng<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="phong-don.html">Phòng Đơn</a>
+                                </li>
+                                <li>
+                                    <a href="phong-doi.html">Phòng Đôi</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="thong-tin-dich-vu.html"><i class="fa fa-bar-chart-o fa-fw"></i>Thông tin dịch vụ</a>
+                        </li>
+                        <li>
+                            <a href="thong-tin-khach-san.html"><i class="fa fa-bar-chart-o fa-fw"></i>Thông tin khách sạn</a>
+                        </li>
+                        <li>
+                            <a href="thong-tin-lien-he.html"><i class="fa fa-bar-chart-o fa-fw"></i>Thông tin liên hệ</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Hình ảnh<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="hinh-anh.html">Hình Ảnh Banner</a>
+                                </li>
+                                <li>
+                                    <a href="hinh-anh.html">Hình Ảnh Nhà Nghỉ</a>
+                                </li>
+                                <li>
+                                    <a href="hinh-anh.html">Hình Ảnh Đảo Phú Qúy</a>
+                                </li>
+                            </ul>
+                        </li>
+                     
+                    </ul>
+                </div>
+            </div>
+        </nav>
+           
+        <div id="page-wrapper">
+            <div class="space50">&nbsp;</div>
+       <div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-12">
+            <section class="panel">
+          
+                <button class="mt-xs mb-xs popup-with-move-anim btn btn-success" >chọn hình</button>
+                <a class="mt-xs mb-xs popup-with-move-anim btn btn-default" href="/" target="_blank">Xem Trên Trang</a>
+                <header class="panel-heading">
+                    <div class="panel-actions">
+                    </div>
+                    <h1 class="panel-title">Hình Ảnh Phòng đôi</h1>
+                </header>
+                <div class="row mt-lg pt-lg" >
+				        <div class="col-md-3">
+            <section class="panel">
+                <header class="panel-heading">
+                    <div class="panel-actions">
+                        <button class="fa fa-times btn-danger"></button>
+                    </div>
+                    <h2 class="panel-title">Hình thứ</h2>
+                </header>
+                <div class="panel-body">
+                    <div class="owl-carousel owl-theme owl-carousel-init" data-plugin-carousel="" data-plugin-options="{ &quot;items&quot;: 1, &quot;autoHeight&quot;: true }" style="display: block; opacity: 1;">
+                        <div class="owl-wrapper-outer autoHeight" style="height: 200px;">
+                            <div class="owl-wrapper" style="width: 1488px; left: 0px; display: block;">
+                                <div class="owl-item" style="width: 270px;">
+                                    <div class="item">
+                                        <img alt="" class="img-responsive" src="img/dao1.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+ 
+ <hr>
+    <div class="space60">&nbsp;</div>
+    <div class="col-lg-7" style="padding-bottom:120px">
+	<form class = "form-horizontal form-bordered">
+  
+
+            <div class="form-group">
+                <label>Giá phòng</label>
+          	<input type="text" class = "form-control">
+            </div>
+            <div class="form-group">
+                <label>Giá khuyến mãi</label>
+         
+				<input type="text" class = "form-control">
+            </div>
+            <div class="form-group">
+                <label>Mô tả</label>
+                <textarea class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Lưu Lại</button>
+
+    
+	<form>
+    </div>
+</div>
+        </div>
+    </div>
+  
+  
+      <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="dist/js/sb-admin-2.js"></script>
+    <script src="bower_components/DataTables/media/js/jquery.dataTables.min.js"></script>
+	  <script src="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+    <script src="vendor/pnotify/pnotify.custom.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+                responsive: true
+        });
+    });
+    </script>
+   
+</body>
+</html>

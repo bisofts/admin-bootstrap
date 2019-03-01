@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css" />
+  <link rel="stylesheet" href="dist/css/sb-admin-2.css" />
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" />
+<link rel="stylesheet" href="bower_components/datatables-responsive/css/dataTables.responsive.css" />
+
+</head>
+<body>
+    <div id="wrapper">
+         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">NHÀ NGHỈ NAM AN</a>
+                <a class="navbar-brand" href="index.html">Trang chủ</a>
+            </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="/Admin/Home/Account"><i class="fa fa-user fa-fw"></i> Chỉnh Sửa tài khoản</a>
+                        </li>
+                        <li>
+                            <a href="/Admin/Login/Logout"><i class="fa fa-sign-out fa-fw"></i> Đăng Xuất</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Thông Tin Phòng<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="phong-don.html">Phòng Đơn</a>
+                                </li>
+                                <li>
+                                    <a href="phong-doi.html">Phòng Đôi</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="thong-tin-dich-vu.html"><i class="fa fa-bar-chart-o fa-fw"></i>Thông tin dịch vụ</a>
+                        </li>
+                        <li>
+                            <a href="thong-tin-khach-san.html"><i class="fa fa-bar-chart-o fa-fw"></i>Thông tin khách sạn</a>
+                        </li>
+                        <li>
+                            <a href="thong-tin-lien-he.html"><i class="fa fa-bar-chart-o fa-fw"></i>Thông tin liên hệ</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Hình ảnh<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="hinh-anh.html">Hình Ảnh Banner</a>
+                                </li>
+                                <li>
+                                    <a href="hinh-anh.html">Hình Ảnh Nhà Nghỉ</a>
+                                </li>
+                                <li>
+                                    <a href="hinh-anh.html">Hình Ảnh Đảo Phú Qúy</a>
+                                </li>
+                            </ul>
+                        </li>
+                     
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="page-wrapper">
+            <div class="space50">&nbsp;</div>
+			
+   <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Thông tin liên hệ
+                    <small>danh sách</small>
+                </h1>
+            </div>
+            <!-- /.col-lg-12 -->
+            <table class="table table-striped table-bordered table-hover" id="">
+                <thead>
+                    <tr align="center">
+                        <th>Tên khách hàng</th>
+                        <th>Số điện thoại</th>
+                        <th>Ngày gửi</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+               
+                        <tr class="odd gradeX" align="center">
+                            <td>nguyễn trọng quyền</td>
+                            <td>01652824094</td>
+                            <td>12/12/2017</td>
+                            <td class="center">
+                                <i class="fa fa-pencil fa-fw"></i> <a href="chi-tiet-lien-he.html">Chi tiết</a>
+                                |
+                     <i class="fa fa-trash-o  fa-fw"></i><a href="/Admin/Informationcomment/delete/@c.ID" onclick="return confirm('bạn có chắc chắn xóa')"> Xóa</a>
+                            </td>
+                        </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    
+</div>
+        </div>
+
+  
+  
+      <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="dist/js/sb-admin-2.js"></script>
+    <script src="bower_components/DataTables/media/js/jquery.dataTables.min.js"></script>
+	  <script src="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+                responsive: true
+        });
+    });
+    </script>
+   
+</body>
+</html>
